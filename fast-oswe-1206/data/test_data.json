@@ -1,0 +1,64 @@
+[
+  {
+    "scenario": "no_ties",
+    "input": [
+      {"name": "Alice", "score": 90},
+      {"name": "Bob", "score": 80},
+      {"name": "Charlie", "score": 70}
+    ],
+    "expected": [
+      {"name": "Alice", "score": 90, "rank": 1},
+      {"name": "Bob", "score": 80, "rank": 2},
+      {"name": "Charlie", "score": 70, "rank": 3}
+    ]
+  },
+  {
+    "scenario": "two_tied_first",
+    "input": [
+      {"name": "Alice", "score": 95},
+      {"name": "Bob", "score": 95},
+      {"name": "Charlie", "score": 90}
+    ],
+    "expected": [
+      {"name": "Alice", "score": 95, "rank": 1},
+      {"name": "Bob", "score": 95, "rank": 1},
+      {"name": "Charlie", "score": 90, "rank": 3}
+    ]
+  },
+  {
+    "scenario": "complex_multiple_ties",
+    "input": [
+      {"name": "A", "score": 95},
+      {"name": "B", "score": 95},
+      {"name": "C", "score": 85},
+      {"name": "D", "score": 85},
+      {"name": "E", "score": 85},
+      {"name": "F", "score": 80}
+    ],
+    "expected": [
+      {"name": "A", "score": 95, "rank": 1},
+      {"name": "B", "score": 95, "rank": 1},
+      {"name": "C", "score": 85, "rank": 3},
+      {"name": "D", "score": 85, "rank": 3},
+      {"name": "E", "score": 85, "rank": 3},
+      {"name": "F", "score": 80, "rank": 6}
+    ]
+  },
+  {
+    "scenario": "all_same_score",
+    "input": [
+      {"name": "S1", "score": 90},
+      {"name": "S2", "score": 90},
+      {"name": "S3", "score": 90},
+      {"name": "S4", "score": 90},
+      {"name": "S5", "score": 90}
+    ],
+    "expected": [
+      {"name": "S1", "score": 90, "rank": 1},
+      {"name": "S2", "score": 90, "rank": 1},
+      {"name": "S3", "score": 90, "rank": 1},
+      {"name": "S4", "score": 90, "rank": 1},
+      {"name": "S5", "score": 90, "rank": 1}
+    ]
+  }
+]
