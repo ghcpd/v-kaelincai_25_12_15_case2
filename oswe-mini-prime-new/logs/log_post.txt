@@ -1,0 +1,97 @@
+﻿C:/BugBash/workSpace2/.venv/Scripts/python.exe : 2025-12-15 14:49:38,251 appointment_service INFO create_appointment_received
+At line:1 char:1
++ C:/BugBash/workSpace2/.venv/Scripts/python.exe -m pytest . --json-rep ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2025-12-15 14:4...ntment_received:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2025-12-15 14:49:38,251 outbox INFO outbox push
+2025-12-15 14:49:38,251 appointment_service INFO calling_legacy_callable
+2025-12-15 14:49:38,251 appointment_service INFO appointment_confirmed
+2025-12-15 14:49:38,251 httpx INFO HTTP Request: POST http://test/appointments "HTTP/1.1 200 OK"
+2025-12-15 14:49:38,251 appointment_service INFO create_appointment_received
+2025-12-15 14:49:38,251 outbox INFO outbox push
+2025-12-15 14:49:38,251 appointment_service INFO calling_legacy_callable
+2025-12-15 14:49:38,251 appointment_service INFO appointment_confirmed
+2025-12-15 14:49:38,251 httpx INFO HTTP Request: POST http://test/appointments "HTTP/1.1 200 OK"
+2025-12-15 14:49:38,251 appointment_service INFO create_appointment_received
+2025-12-15 14:49:38,251 appointment_service INFO idempotent_hit
+2025-12-15 14:49:38,251 httpx INFO HTTP Request: POST http://test/appointments "HTTP/1.1 200 OK"
+2025-12-15 14:49:38,251 appointment_service INFO create_appointment_received
+2025-12-15 14:49:38,251 outbox INFO outbox push
+2025-12-15 14:49:38,251 appointment_service INFO calling_legacy_callable
+2025-12-15 14:49:38,251 appointment_service INFO appointment_confirmed
+2025-12-15 14:49:38,251 httpx INFO HTTP Request: POST http://test/appointments "HTTP/1.1 200 OK"
+2025-12-15 14:49:38,262 appointment_service INFO create_appointment_received
+2025-12-15 14:49:38,262 outbox INFO outbox push
+2025-12-15 14:49:38,262 appointment_service INFO calling_legacy_callable
+2025-12-15 14:49:38,262 outbox INFO outbox push
+2025-12-15 14:49:38,262 appointment_service ERROR legacy_confirm_failed
+2025-12-15 14:49:38,262 httpx INFO HTTP Request: POST http://test/appointments "HTTP/1.1 200 OK"
+2025-12-15 14:49:38,262 appointment_service INFO create_appointment_received
+2025-12-15 14:49:38,262 outbox INFO outbox push
+2025-12-15 14:49:38,262 appointment_service INFO calling_legacy_callable
+2025-12-15 14:49:40,828 legacy_client WARNING legacy call attempt failed
+2025-12-15 14:49:43,839 legacy_client WARNING legacy call attempt failed
+2025-12-15 14:49:47,355 legacy_client WARNING legacy call attempt failed
+2025-12-15 14:49:47,355 legacy_client ERROR legacy call final failure
+2025-12-15 14:49:47,355 outbox INFO outbox push
+2025-12-15 14:49:47,355 appointment_service ERROR legacy_confirm_failed
+2025-12-15 14:49:47,355 httpx INFO HTTP Request: POST http://test/appointments "HTTP/1.1 200 OK"
+.....
+============================== warnings summary ===============================
+tests/test_post_change.py::test_happy_path
+  C:\BugBash\workSpace2\oswe-mini-prime-new\tests\test_post_change.py:17: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    payload = {"patient_id": "p1", "start_time": datetime.utcnow().isoformat(), "duration_minutes": 30}
+
+tests/test_post_change.py::test_happy_path
+tests/test_post_change.py::test_idempotency
+tests/test_post_change.py::test_idempotency
+tests/test_post_change.py::test_retry_with_backoff
+tests/test_post_change.py::test_timeout_and_compensation
+tests/test_post_change.py::test_audit_reconciliation
+  C:\BugBash\workSpace2\oswe-mini-prime-new\src\app.py:33: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.12/migration/
+    logger.info("create_appointment_received", extra={"request_id": request_id, "payload": mask_sensitive(req.dict())})
+
+tests/test_post_change.py::test_happy_path
+tests/test_post_change.py::test_idempotency
+tests/test_post_change.py::test_retry_with_backoff
+tests/test_post_change.py::test_timeout_and_compensation
+tests/test_post_change.py::test_audit_reconciliation
+  C:\BugBash\workSpace2\oswe-mini-prime-new\src\app.py:47: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    created_at=datetime.utcnow(),
+
+tests/test_post_change.py::test_happy_path
+tests/test_post_change.py::test_idempotency
+tests/test_post_change.py::test_retry_with_backoff
+tests/test_post_change.py::test_timeout_and_compensation
+tests/test_post_change.py::test_audit_reconciliation
+  C:\BugBash\workSpace2\oswe-mini-prime-new\src\app.py:50: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.12/migration/
+    DB[appt_id] = appt.dict()
+
+tests/test_post_change.py::test_happy_path
+tests/test_post_change.py::test_idempotency
+tests/test_post_change.py::test_retry_with_backoff
+tests/test_post_change.py::test_timeout_and_compensation
+tests/test_post_change.py::test_audit_reconciliation
+  C:\BugBash\workSpace2\oswe-mini-prime-new\src\app.py:53: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    await push({"id": str(uuid.uuid4()), "type": "appointment.created", "appointment_id": appt_id, "ts": datetime.utcnow().isoformat()})
+
+tests/test_post_change.py::test_idempotency
+  C:\BugBash\workSpace2\oswe-mini-prime-new\tests\test_post_change.py:29: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    payload = {"patient_id": "p2", "start_time": datetime.utcnow().isoformat(), "duration_minutes": 30}
+
+tests/test_post_change.py::test_retry_with_backoff
+  C:\BugBash\workSpace2\oswe-mini-prime-new\tests\test_post_change.py:49: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    payload = {"patient_id": "p3", "start_time": datetime.utcnow().isoformat(), "duration_minutes": 30}
+
+tests/test_post_change.py::test_timeout_and_compensation
+  C:\BugBash\workSpace2\oswe-mini-prime-new\tests\test_post_change.py:61: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    payload = {"patient_id": "p4", "start_time": datetime.utcnow().isoformat(), "duration_minutes": 45}
+
+tests/test_post_change.py::test_audit_reconciliation
+  C:\BugBash\workSpace2\oswe-mini-prime-new\tests\test_post_change.py:68: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    payload = {"patient_id": "p5", "start_time": datetime.utcnow().isoformat(), "duration_minutes": 30}
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+5 passed, 26 warnings in 9.13s
