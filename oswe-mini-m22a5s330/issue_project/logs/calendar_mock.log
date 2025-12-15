@@ -1,0 +1,111 @@
+C:\Users\v-kaelincai\AppData\Local\Programs\Python\Python312\python.exe: Error while finding module specification for 'issue_project.mocks.calendar_mock' (ModuleNotFoundError: No module named 'issue_project')
+C:\Users\v-kaelincai\AppData\Local\Programs\Python\Python312\python.exe: Error while finding module specification for 'issue_project.mocks.calendar_mock' (ModuleNotFoundError: No module named 'issue_project')
+C:\Users\v-kaelincai\AppData\Local\Programs\Python\Python312\python.exe: Error while finding module specification for 'issue_project.mocks.calendar_mock' (ModuleNotFoundError: No module named 'issue_project')
+ * Serving Flask app 'calendar_mock'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5001
+Press CTRL+C to quit
+127.0.0.1 - - [15/Dec/2025 13:49:21] "GET /__admin/state HTTP/1.1" 200 -
+127.0.0.1 - - [15/Dec/2025 13:49:22] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:49:22] "POST /api/v2/calendar HTTP/1.1" 200 -
+127.0.0.1 - - [15/Dec/2025 13:49:22] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:49:22] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:49:22] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:49:22] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:49:22] "POST /api/v2/calendar HTTP/1.1" 200 -
+127.0.0.1 - - [15/Dec/2025 13:49:22] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:49:22] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:49:24] "POST /api/v2/calendar HTTP/1.1" 200 -
+127.0.0.1 - - [15/Dec/2025 13:49:24] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:49:24] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:49:24] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:49:25] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:49:25] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:49:26] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:49:27] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:49:27] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:49:27] "POST /api/v2/calendar HTTP/1.1" 200 -
+127.0.0.1 - - [15/Dec/2025 13:49:27] "GET /__admin/state HTTP/1.1" 200 -
+127.0.0.1 - - [15/Dec/2025 13:49:27] "POST /api/v2/calendar HTTP/1.1" 200 -
+ * Serving Flask app 'calendar_mock'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5001
+Press CTRL+C to quit
+127.0.0.1 - - [15/Dec/2025 13:51:02] "GET /__admin/state HTTP/1.1" 200 -
+127.0.0.1 - - [15/Dec/2025 13:51:02] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:51:02] "POST /api/v2/calendar HTTP/1.1" 200 -
+127.0.0.1 - - [15/Dec/2025 13:51:02] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:51:02] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:51:02] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:51:02] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:51:02] "POST /api/v2/calendar HTTP/1.1" 200 -
+127.0.0.1 - - [15/Dec/2025 13:51:02] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:51:02] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:51:05] "POST /api/v2/calendar HTTP/1.1" 200 -
+127.0.0.1 - - [15/Dec/2025 13:51:05] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:51:05] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:51:05] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:51:05] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:51:05] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:51:06] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:51:08] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:51:08] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:51:08] "POST /api/v2/calendar HTTP/1.1" 200 -
+127.0.0.1 - - [15/Dec/2025 13:51:08] "GET /__admin/state HTTP/1.1" 200 -
+127.0.0.1 - - [15/Dec/2025 13:51:08] "POST /api/v2/calendar HTTP/1.1" 200 -
+ * Serving Flask app 'calendar_mock'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5001
+Press CTRL+C to quit
+127.0.0.1 - - [15/Dec/2025 13:51:12] "GET /__admin/state HTTP/1.1" 200 -
+127.0.0.1 - - [15/Dec/2025 13:51:12] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:51:12] "POST /api/v2/calendar HTTP/1.1" 200 -
+127.0.0.1 - - [15/Dec/2025 13:51:12] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:51:12] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:51:12] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:51:12] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:51:13] "POST /api/v2/calendar HTTP/1.1" 200 -
+127.0.0.1 - - [15/Dec/2025 13:51:13] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:51:13] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:51:15] "POST /api/v2/calendar HTTP/1.1" 200 -
+127.0.0.1 - - [15/Dec/2025 13:51:15] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:51:15] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:51:15] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:51:15] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:51:16] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:51:16] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:51:18] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:51:18] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:51:18] "POST /api/v2/calendar HTTP/1.1" 200 -
+127.0.0.1 - - [15/Dec/2025 13:51:18] "GET /__admin/state HTTP/1.1" 200 -
+127.0.0.1 - - [15/Dec/2025 13:51:18] "POST /api/v2/calendar HTTP/1.1" 200 -
+ * Serving Flask app 'calendar_mock'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5001
+Press CTRL+C to quit
+127.0.0.1 - - [15/Dec/2025 13:56:31] "GET /__admin/state HTTP/1.1" 200 -
+127.0.0.1 - - [15/Dec/2025 13:56:31] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:56:31] "POST /api/v2/calendar HTTP/1.1" 200 -
+127.0.0.1 - - [15/Dec/2025 13:56:31] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:56:31] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:56:31] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:56:31] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:56:32] "POST /api/v2/calendar HTTP/1.1" 200 -
+127.0.0.1 - - [15/Dec/2025 13:56:32] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:56:32] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:56:34] "POST /api/v2/calendar HTTP/1.1" 200 -
+127.0.0.1 - - [15/Dec/2025 13:56:34] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:56:34] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:56:34] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:56:34] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:56:34] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:56:35] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:56:37] "POST /api/v2/calendar HTTP/1.1" 500 -
+127.0.0.1 - - [15/Dec/2025 13:56:37] "POST /__admin/state HTTP/1.1" 204 -
+127.0.0.1 - - [15/Dec/2025 13:56:37] "POST /api/v2/calendar HTTP/1.1" 200 -
+127.0.0.1 - - [15/Dec/2025 13:56:37] "GET /__admin/state HTTP/1.1" 200 -
+127.0.0.1 - - [15/Dec/2025 13:56:37] "POST /api/v2/calendar HTTP/1.1" 200 -
