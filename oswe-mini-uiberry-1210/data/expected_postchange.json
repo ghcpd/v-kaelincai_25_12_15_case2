@@ -1,0 +1,30 @@
+{
+  "cases": {
+    "simple_no_ties": [
+      {"name": "Alice", "score": 95, "rank": 1},
+      {"name": "Bob", "score": 90, "rank": 2},
+      {"name": "Charlie", "score": 80, "rank": 3}
+    ],
+
+    "two_tied_first": [
+      {"name": "Alice", "score": 95, "rank": 1},
+      {"name": "Bob", "score": 95, "rank": 1},
+      {"name": "Charlie", "score": 90, "rank": 2}
+    ],
+
+    "multiple_ties_complex": [
+      {"name": "A", "score": 95, "rank": 1},
+      {"name": "B", "score": 95, "rank": 1},
+      {"name": "C", "score": 85, "rank": 2},
+      {"name": "D", "score": 85, "rank": 2},
+      {"name": "E", "score": 85, "rank": 2},
+      {"name": "F", "score": 80, "rank": 3}
+    ],
+
+    "all_same_score": [
+      {"name": "S1", "score": 88, "rank": 1},
+      {"name": "S2", "score": 88, "rank": 1},
+      {"name": "S3", "score": 88, "rank": 1}
+    ]
+  }
+}

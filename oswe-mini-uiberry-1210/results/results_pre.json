@@ -1,0 +1,8 @@
+{
+  "note": "Legacy (pre-change) sample outputs showing incorrect ranking for ties",
+  "case-2": [
+    {"name": "Alice", "score": 95, "rank": 1},
+    {"name": "Bob", "score": 95, "rank": 2},
+    {"name": "Charlie", "score": 90, "rank": 3}
+  ]
+}

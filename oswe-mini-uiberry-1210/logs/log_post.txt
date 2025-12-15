@@ -1,0 +1,64 @@
+{"ts": 1765777600118, "msg": "publish_success", "request_id": "case-1", "attempts": 1}
+{"ts": 1765777600118, "msg": "publish_success", "request_id": "case-2", "attempts": 1}
+{"ts": 1765777600118, "msg": "idempotent_replay", "request_id": "case-2"}
+{"ts": 1765777600118, "msg": "publish_attempt_failed", "request_id": "case-3", "attempt": 1, "error": "transient error"}
+{"ts": 1765777600133, "msg": "publish_attempt_failed", "request_id": "case-3", "attempt": 2, "error": "transient error"}
+{"ts": 1765777600153, "msg": "circuit_open", "request_id": "case-3", "error": "circuit is open"}
+{"ts": 1765777600153, "msg": "compensation_performed", "request_id": "case-3", "reason": "circuit is open"}
+{"ts": 1765777600218, "msg": "publish_attempt_failed", "request_id": "case-1", "attempt": 1, "error": "permanent failure"}
+{"ts": 1765777600231, "msg": "publish_attempt_failed", "request_id": "case-1", "attempt": 2, "error": "permanent failure"}
+{"ts": 1765777600252, "msg": "circuit_open", "request_id": "case-1", "error": "circuit is open"}
+{"ts": 1765777600252, "msg": "compensation_performed", "request_id": "case-1", "reason": "circuit is open"}
+{"ts": 1765777600252, "msg": "circuit_open", "request_id": "case-2", "error": "circuit is open"}
+{"ts": 1765777600252, "msg": "compensation_performed", "request_id": "case-2", "reason": "circuit is open"}
+{"ts": 1765777600252, "msg": "publish_attempt_failed", "request_id": "case-1", "attempt": 1, "error": "permanent failure"}
+{"ts": 1765777600265, "msg": "publish_attempt_failed", "request_id": "case-1", "attempt": 2, "error": "permanent failure"}
+{"ts": 1765777600285, "msg": "circuit_open", "request_id": "case-1", "error": "circuit is open"}
+{"ts": 1765777600285, "msg": "compensation_performed", "request_id": "case-1", "reason": "circuit is open"}
+{"ts": 1765777600286, "msg": "publish_attempt_failed", "request_id": "case-3", "attempt": 1, "error": "permanent failure"}
+{"ts": 1765777600297, "msg": "publish_attempt_failed", "request_id": "case-3", "attempt": 2, "error": "permanent failure"}
+{"ts": 1765777600317, "msg": "circuit_open", "request_id": "case-3", "error": "circuit is open"}
+{"ts": 1765777600317, "msg": "compensation_performed", "request_id": "case-3", "reason": "circuit is open"}
+{"ts": 1765777600317, "msg": "reconcile_success", "request_id": "case-3", "attempts": 1}
+{"ts": 1765777613589, "msg": "publish_success", "request_id": "case-1", "attempts": 1}
+{"ts": 1765777613591, "msg": "publish_success", "request_id": "case-2", "attempts": 1}
+{"ts": 1765777613591, "msg": "idempotent_replay", "request_id": "case-2"}
+{"ts": 1765777613591, "msg": "publish_attempt_failed", "request_id": "case-3", "attempt": 1, "error": "transient error"}
+{"ts": 1765777613603, "msg": "publish_attempt_failed", "request_id": "case-3", "attempt": 2, "error": "transient error"}
+{"ts": 1765777613624, "msg": "publish_success", "request_id": "case-3", "attempts": 3}
+{"ts": 1765777613625, "msg": "publish_attempt_failed", "request_id": "case-1", "attempt": 1, "error": "permanent failure"}
+{"ts": 1765777613636, "msg": "publish_attempt_failed", "request_id": "case-1", "attempt": 2, "error": "permanent failure"}
+{"ts": 1765777613657, "msg": "publish_attempt_failed", "request_id": "case-1", "attempt": 3, "error": "permanent failure"}
+{"ts": 1765777613698, "msg": "compensation_performed", "request_id": "case-1", "reason": "publish failed after 3 attempts: permanent failure"}
+{"ts": 1765777613698, "msg": "circuit_open", "request_id": "case-2", "error": "circuit is open"}
+{"ts": 1765777613698, "msg": "compensation_performed", "request_id": "case-2", "reason": "circuit is open"}
+{"ts": 1765777613700, "msg": "publish_attempt_failed", "request_id": "case-1", "attempt": 1, "error": "permanent failure"}
+{"ts": 1765777613711, "msg": "publish_attempt_failed", "request_id": "case-1", "attempt": 2, "error": "permanent failure"}
+{"ts": 1765777613731, "msg": "publish_attempt_failed", "request_id": "case-1", "attempt": 3, "error": "permanent failure"}
+{"ts": 1765777613772, "msg": "compensation_performed", "request_id": "case-1", "reason": "publish failed after 3 attempts: permanent failure"}
+{"ts": 1765777613773, "msg": "publish_attempt_failed", "request_id": "case-3", "attempt": 1, "error": "permanent failure"}
+{"ts": 1765777613783, "msg": "publish_attempt_failed", "request_id": "case-3", "attempt": 2, "error": "permanent failure"}
+{"ts": 1765777613804, "msg": "publish_attempt_failed", "request_id": "case-3", "attempt": 3, "error": "permanent failure"}
+{"ts": 1765777613844, "msg": "compensation_performed", "request_id": "case-3", "reason": "publish failed after 3 attempts: permanent failure"}
+{"ts": 1765777613844, "msg": "reconcile_success", "request_id": "case-3", "attempts": 1}
+{"ts": 1765778257831, "msg": "publish_success", "request_id": "case-1", "attempts": 1}
+{"ts": 1765778257832, "msg": "publish_success", "request_id": "case-2", "attempts": 1}
+{"ts": 1765778257832, "msg": "idempotent_replay", "request_id": "case-2"}
+{"ts": 1765778257833, "msg": "publish_attempt_failed", "request_id": "case-3", "attempt": 1, "error": "transient error"}
+{"ts": 1765778257844, "msg": "publish_attempt_failed", "request_id": "case-3", "attempt": 2, "error": "transient error"}
+{"ts": 1765778257864, "msg": "publish_success", "request_id": "case-3", "attempts": 3}
+{"ts": 1765778257864, "msg": "publish_attempt_failed", "request_id": "case-1", "attempt": 1, "error": "permanent failure"}
+{"ts": 1765778257876, "msg": "publish_attempt_failed", "request_id": "case-1", "attempt": 2, "error": "permanent failure"}
+{"ts": 1765778257896, "msg": "publish_attempt_failed", "request_id": "case-1", "attempt": 3, "error": "permanent failure"}
+{"ts": 1765778257937, "msg": "compensation_performed", "request_id": "case-1", "reason": "publish failed after 3 attempts: permanent failure"}
+{"ts": 1765778257937, "msg": "circuit_open", "request_id": "case-2", "error": "circuit is open"}
+{"ts": 1765778257937, "msg": "compensation_performed", "request_id": "case-2", "reason": "circuit is open"}
+{"ts": 1765778257939, "msg": "publish_attempt_failed", "request_id": "case-1", "attempt": 1, "error": "permanent failure"}
+{"ts": 1765778257949, "msg": "publish_attempt_failed", "request_id": "case-1", "attempt": 2, "error": "permanent failure"}
+{"ts": 1765778257970, "msg": "publish_attempt_failed", "request_id": "case-1", "attempt": 3, "error": "permanent failure"}
+{"ts": 1765778258011, "msg": "compensation_performed", "request_id": "case-1", "reason": "publish failed after 3 attempts: permanent failure"}
+{"ts": 1765778258012, "msg": "publish_attempt_failed", "request_id": "case-3", "attempt": 1, "error": "permanent failure"}
+{"ts": 1765778258022, "msg": "publish_attempt_failed", "request_id": "case-3", "attempt": 2, "error": "permanent failure"}
+{"ts": 1765778258043, "msg": "publish_attempt_failed", "request_id": "case-3", "attempt": 3, "error": "permanent failure"}
+{"ts": 1765778258084, "msg": "compensation_performed", "request_id": "case-3", "reason": "publish failed after 3 attempts: permanent failure"}
+{"ts": 1765778258084, "msg": "reconcile_success", "request_id": "case-3", "attempts": 1}
