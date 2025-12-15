@@ -1,0 +1,32 @@
+{
+  "tests_executed": 6,
+  "tests": [
+    {
+      "test": "healthy_path",
+      "status": "passed"
+    },
+    {
+      "test": "idempotency_replay",
+      "status": "passed"
+    },
+    {
+      "test": "retry_with_backoff",
+      "status": "passed",
+      "retries": 2
+    },
+    {
+      "test": "timeout_and_circuit_breaker",
+      "status": "passed",
+      "circuit_state": "open"
+    },
+    {
+      "test": "compensation_and_outbox",
+      "status": "passed"
+    },
+    {
+      "test": "reconciliation_and_audit",
+      "status": "passed",
+      "reconciled": 1
+    }
+  ]
+}

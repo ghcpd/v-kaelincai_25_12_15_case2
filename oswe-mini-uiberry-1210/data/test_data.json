@@ -1,0 +1,49 @@
+{
+  "cases": {
+    "simple_no_ties": {
+      "request_id": "case-1",
+      "students": [
+        {"name": "Alice", "score": 95},
+        {"name": "Bob", "score": 90},
+        {"name": "Charlie", "score": 80}
+      ]
+    },
+
+    "two_tied_first": {
+      "request_id": "case-2",
+      "students": [
+        {"name": "Alice", "score": 95},
+        {"name": "Bob", "score": 95},
+        {"name": "Charlie", "score": 90}
+      ]
+    },
+
+    "multiple_ties_complex": {
+      "request_id": "case-3",
+      "students": [
+        {"name": "A", "score": 95},
+        {"name": "B", "score": 95},
+        {"name": "C", "score": 85},
+        {"name": "D", "score": 85},
+        {"name": "E", "score": 85},
+        {"name": "F", "score": 80}
+      ]
+    },
+
+    "all_same_score": {
+      "request_id": "case-4",
+      "students": [
+        {"name": "S1", "score": 88},
+        {"name": "S2", "score": 88},
+        {"name": "S3", "score": 88}
+      ]
+    },
+
+    "invalid_score_negative": {
+      "request_id": "case-5",
+      "students": [
+        {"name": "Bad", "score": -5}
+      ]
+    }
+  }
+}
