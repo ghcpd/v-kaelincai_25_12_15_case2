@@ -1,0 +1,38 @@
+[
+  {
+    "scenario": "successful_booking",
+    "idempotency_key": "shared-1",
+    "user_id": "user1",
+    "datetime": "2025-12-15T10:00:00Z",
+    "expected": "booked"
+  },
+  {
+    "scenario": "idempotent_retry",
+    "idempotency_key": "shared-1",
+    "user_id": "user1",
+    "datetime": "2025-12-15T11:00:00Z",
+    "expected": "existing"
+  },
+  {
+    "scenario": "conflict",
+    "idempotency_key": "shared-2",
+    "user_id": "user2",
+    "datetime": "2025-12-15T10:00:00Z",
+    "expected": "failed"
+  },
+  {
+    "scenario": "invalid_input",
+    "idempotency_key": "shared-3",
+    "user_id": "user3",
+    "datetime": "invalid",
+    "expected": "error"
+  },
+  {
+    "scenario": "timeout_simulation",
+    "idempotency_key": "shared-4",
+    "user_id": "user4",
+    "datetime": "2025-12-15T12:00:00Z",
+    "expected": "booked",
+    "delay": 5
+  }
+]
