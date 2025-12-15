@@ -1,0 +1,6 @@
+pytest==7.4.2
+requests==2.32.0
+jsonschema==4.23.0
+
+# For structured logging
+
