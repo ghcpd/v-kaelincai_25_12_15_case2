@@ -1,0 +1,150 @@
+[
+  {
+    "test_case": "test_001_no_ties",
+    "description": "Basic ranking without ties (regression test)",
+    "input": {
+      "request_id": "test-001",
+      "students": [
+        {"name": "Alice", "score": 90},
+        {"name": "Bob", "score": 80},
+        {"name": "Charlie", "score": 70}
+      ]
+    },
+    "expected_output": {
+      "results": [
+        {"name": "Alice", "rank": 1},
+        {"name": "Bob", "rank": 2},
+        {"name": "Charlie", "rank": 3}
+      ],
+      "statistics": {
+        "total_students": 3,
+        "unique_scores": 3,
+        "tie_groups": []
+      }
+    }
+  },
+  {
+    "test_case": "test_002_tied_first_place",
+    "description": "CRITICAL: Two students tied for first (main bug scenario)",
+    "input": {
+      "request_id": "test-002",
+      "students": [
+        {"name": "Alice", "score": 95},
+        {"name": "Bob", "score": 95},
+        {"name": "Charlie", "score": 90}
+      ]
+    },
+    "expected_output": {
+      "results": [
+        {"name": "Alice", "rank": 1},
+        {"name": "Bob", "rank": 1},
+        {"name": "Charlie", "rank": 2}
+      ],
+      "statistics": {
+        "total_students": 3,
+        "unique_scores": 2,
+        "tie_groups": [
+          {"score": 95, "count": 2, "rank": 1}
+        ]
+      }
+    }
+  },
+  {
+    "test_case": "test_003_multiple_tie_groups",
+    "description": "Complex scenario: multiple groups of ties",
+    "input": {
+      "request_id": "test-003",
+      "students": [
+        {"name": "A", "score": 95},
+        {"name": "B", "score": 95},
+        {"name": "C", "score": 85},
+        {"name": "D", "score": 85},
+        {"name": "E", "score": 85},
+        {"name": "F", "score": 80}
+      ]
+    },
+    "expected_output": {
+      "results": [
+        {"name": "A", "rank": 1},
+        {"name": "B", "rank": 1},
+        {"name": "C", "rank": 3},
+        {"name": "D", "rank": 3},
+        {"name": "E", "rank": 3},
+        {"name": "F", "rank": 6}
+      ],
+      "statistics": {
+        "total_students": 6,
+        "unique_scores": 3,
+        "tie_groups": [
+          {"score": 95, "count": 2, "rank": 1},
+          {"score": 85, "count": 3, "rank": 3}
+        ]
+      }
+    }
+  },
+  {
+    "test_case": "test_004_all_same_score",
+    "description": "All students with same score (everyone tied for first)",
+    "input": {
+      "request_id": "test-004",
+      "students": [
+        {"name": "Student1", "score": 90},
+        {"name": "Student2", "score": 90},
+        {"name": "Student3", "score": 90},
+        {"name": "Student4", "score": 90},
+        {"name": "Student5", "score": 90}
+      ]
+    },
+    "expected_output": {
+      "results": [
+        {"name": "Student1", "rank": 1},
+        {"name": "Student2", "rank": 1},
+        {"name": "Student3", "rank": 1},
+        {"name": "Student4", "rank": 1},
+        {"name": "Student5", "rank": 1}
+      ],
+      "statistics": {
+        "total_students": 5,
+        "unique_scores": 1,
+        "tie_groups": [
+          {"score": 90, "count": 5, "rank": 1}
+        ]
+      }
+    }
+  },
+  {
+    "test_case": "test_005_json_data",
+    "description": "Chinese student data from JSON file (from legacy test)",
+    "input": {
+      "request_id": "test-005",
+      "students": [
+        {"name": "小明", "score": 95},
+        {"name": "小红", "score": 95},
+        {"name": "小李", "score": 90},
+        {"name": "小张", "score": 85},
+        {"name": "小王", "score": 85},
+        {"name": "小刘", "score": 85},
+        {"name": "小陈", "score": 80}
+      ]
+    },
+    "expected_output": {
+      "results": [
+        {"name": "小明", "rank": 1},
+        {"name": "小红", "rank": 1},
+        {"name": "小李", "rank": 3},
+        {"name": "小张", "rank": 4},
+        {"name": "小王", "rank": 4},
+        {"name": "小刘", "rank": 4},
+        {"name": "小陈", "rank": 7}
+      ],
+      "statistics": {
+        "total_students": 7,
+        "unique_scores": 4,
+        "tie_groups": [
+          {"score": 95, "count": 2, "rank": 1},
+          {"score": 85, "count": 3, "rank": 4}
+        ]
+      }
+    }
+  }
+]
