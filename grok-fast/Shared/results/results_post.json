@@ -1,0 +1,9 @@
+{
+  "tests_run": 5,
+  "passed": 5,
+  "failed": 0,
+  "metrics": {
+    "avg_response_time": 0.05,
+    "success_rate": 1.0
+  }
+}

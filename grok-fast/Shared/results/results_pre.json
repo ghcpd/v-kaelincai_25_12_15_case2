@@ -1,0 +1,6 @@
+{
+  "tests_run": 7,
+  "passed": 3,
+  "failed": 4,
+  "failures": ["test_two_students_tied_first_place", "test_multiple_ties_complex", "test_all_students_same_score", "test_with_json_data"]
+}

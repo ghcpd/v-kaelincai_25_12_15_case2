@@ -1,0 +1,17 @@
+{
+  "pre": {
+    "correctness": 0.43,
+    "latency_p50": 0.01,
+    "errors": 4
+  },
+  "post": {
+    "correctness": 1.0,
+    "latency_p50": 0.05,
+    "errors": 0
+  },
+  "improvement": {
+    "correctness": "+57%",
+    "latency": "-5ms",
+    "errors": "-100%"
+  }
+}
